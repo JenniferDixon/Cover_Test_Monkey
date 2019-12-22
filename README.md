@@ -40,4 +40,5 @@ During the course of this excercise, there were many opportunities for improveme
   * As of now there is no function that can be called externally to setup the webpage and driver. Adding a setup function would complete the test suit such that its modules can be called by other scripts or via the command line, without having to set up the driver manually.
 * Add multiple browser driver options (Firefox, Edge, Safari) so multiple web browsers can be tested
 * Develop a test result printout/html/csv page so test results can be summarized outside of the python output window and are easily exportable.
+* Add timer and test time elapsed report
 
