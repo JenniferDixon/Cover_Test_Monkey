@@ -29,7 +29,7 @@ Test-specific design choices and assumptions are documented within the code.
 ### Test improvements
 For each test, # ToDO improvements are flagged within the code. Some test improvement themes include:
 * More accurate test criteria
-   * Most checks for whether the user can view X comic depend on comparing the previous and new url. This doesn't include checks on whether the comic has changed. A more rigorous test would verify that not only has navigation occured, but the content has changed also.
+   * Most checks for whether the user can view X comic depend on comparing the previous and new url. This doesn't include checks on whether the comic has changed. A more rigorous test would verify that not only has navigation occured, but the content has changed.
  * More comprehensive feature testing
    * Some features occur multiple times on a webpage, for example, two "random comic" buttons. A comprehensive test would scan for x features and test each one
 
