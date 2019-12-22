@@ -7,7 +7,7 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 
 
-""""
+"""
 Feature Tests
   - 1) Views a random comic
   - 2) Views the latest comic
@@ -29,7 +29,7 @@ def view_rand_comic():
     """
     Test 1)
     Feature: User can view a random comic
-    Test: Is the 'random' button available, if so, does it work?
+    Test: Is the 'Random' button available, if so, does it work?
     Input: find 'Random' comic button and click it
     Pass Criteria (ALL): 'Random' button is available, no assert error, new url is different than old
     FaiL Criteria (One or more): 'Random' button is unavailable, page displays no results
@@ -145,8 +145,8 @@ def open_comic_by_date(SearchDateText):
     Pass Criteria (ALL): Comic of given date is found
     Fail Criteria (One or more): Comic of given date is not found
     Test Limitations: relies on correctly functioning "first comic" and "next comic" navigation buttons, relies on lack of "next"
-                    button indicating end of comic library. Will search only first 250 comics (arbitrary). Requires input Format must be "DD MMM YYYY",
-                     Input format is CASE SENSITIVE. Will open only first comic with input date (does not work for multiple comics from same day).
+         button indicating end of comic library. Will search only first 250 comics (arbitrary). Requires input Format must be "DD MMM YYYY",
+         Input format is CASE SENSITIVE. Will open only first comic with input date (does not work for multiple comics from same day).
     """
     print("Test 5 - Open Comic from the following date: " + SearchDateText)
     driver.get("https://www.monkeyuser.com/")
@@ -167,7 +167,7 @@ def open_comic_by_date(SearchDateText):
             driver.find_element_by_xpath("//div[@class='thumb next nobefore']/a").click()
 
     # ToDO Improvement: Stop searching early by comparing input date to webpage date so it doesn't iterate through
-    #       all the comics once it passes the expected date area
+    #      all the comics once it passes the expected date area
     # ToDo Improvement: Screenshot the comic once found, for further verification that the correct one was found
 
 def add_to_cart():
